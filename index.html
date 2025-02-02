@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Cards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+        }
+        .card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        .card-header {
+            display: flex;
+            align-items: center;
+        }
+        .card img {
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+            margin-right: 15px;
+        }
+        .card-header div {
+            flex-grow: 1;
+        }
+        .card-content {
+            margin-top: 10px;
+        }
+        .card h3, .card p {
+            margin: 5px 0;
+        }
+        .stars {
+            color: gold;
+        }
+        .view {
+            color: blue;
+            text-decoration: none;
+            font-weight: bold;
+            position: absolute;
+            bottom: 10px;
+            right: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd0tpPUn3i_x5jgRcENKrC5S0hfUNU1tUQRA&s" alt="Stripe">
+                <div>
+                    <h3>Stripe</h3>
+                    <p>Payment Services</p>
+                    <span class="stars">★★★★★</span>
+                </div>
+            </div>
+            <div class="card-content">
+                <p>Get more context on your users with stripe data inside our platform</p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <p>installed 172 times</p>
+            </div>
+            <a href="#" class="view">View ></a>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <img src="https://www.drupal.org/files/project-images/MC_Logo_0.jpg" alt="mailchimp">
+                <div>
+                    <h3>Mailchimp</h3>
+                    <p>Project Management</p>
+                    <span class="stars">★★★★★</span>
+                </div>
+            </div>
+            <div class="card-content">
+                <p>Capture and sync subscribes rom your mailchimp platform to ours with ease.</p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <p>installed 172times</p>
+            </div>
+            <a href="#" class="view">View ></a>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <img src="https://play-lh.googleusercontent.com/b1-MIBjlMD9kvl0Okeglm9BL9ejRpOXMio303W0tiLb8Ul5WuVzBDoDKgGRcALOsCdw" alt="dropbox">
+                <div>
+                    <h3>Dropbox</h3>
+                    <p>File Management</p>
+                    <span class="stars">★★★★★</span>
+                </div>
+            </div>
+            <div class="card-content">
+                <p>Use dropbox to sync your photos to our platform and share it with others.</p>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <p>installed 1234 times</p>
+            </div>
+            <a href="#" class="view">View ></a>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <img src="https://investors.shopify.com/files/design/logo/shopify_glyph_for_social.png" alt="Shopify">
+                <div>
+                    <h3>Shopify</h3>
+                    <p>Ecommerce</p>
+                    <span class="stars">★★★★★</span>
+                </div>
+            </div>
+            <div class="card-content">
+                <p>Sell your items with ease with having any website with our free platform.</p>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <p>installed 1234 times</p>
+            </div>
+            <a href="#" class="view">View ></a>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr42lt0uL4-RkQGD5AoUhQGn4OGr-foggxTQ&amp;s" alt="atlassian">
+                <div>
+                    <h3>Atlassian</h3>
+                    <p>Project Management</p>
+                    <span class="stars">★★★★★</span>
+                </div>
+            </div>
+            <div class="card-content">
+                <p>Developing products for developers , projects managers and architects.</p>
+                &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;
+                <p>installed 345 times</p>
+            </div>
+            <a href="#" class="view">View ></a>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <img src="https://yt3.googleusercontent.com/ZIPvInnj50dYnGYvkanm_IYcoYaofSY47e_4iah-EoCduSdhxYOC_-TCatm9XR3HAp1HJeomAa0=s900-c-k-c0x00ffffff-no-rj" alt="salceforce">
+                <div>
+                    <h3>Salceforce</h3>
+                    <p>Project Management</p>
+                    <span class="stars">★★★★★</span>
+                </div>
+            </div>
+            <div class="card-content">
+                <p>Developing products for developers , projects managers and architects.</p>
+
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                &nbsp;
+                &nbsp;&nbsp;
+                <p>installed 345times</p>
+            </div>
+            <a href="#" class="view">View ></a>
+        </div>
+    </div>
+</body>
+</html>
